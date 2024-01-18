@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style/main.css">
+    <title>Formulaire d'inscription</title>
+  </head>
+  <body>
+    <div>
+      <div><p style="color: red;">{{error}}</p></div>
+
+      <h3>Formulaire d'inscription</h3>
+      <form id="formRegister" action="{{url_for('formregister')}}" method="POST">
+        <div class="field">
+          <label for="nom">Nom:</label><br />
+          <input type="text" id="nom" name="nom" />
+        </div>
+
+        <div class="field">
+          <label for="prenom">Prénom:</label><br />
+          <input type="text" id="prenom" name="prenom" />
+        </div>
+
+        <div class="field">
+          <label for="email">email:</label><br />
+          <input type="text" id="email" name="email" />
+        </div>
+
+        <div class="field">
+          <label for="mdpr">Mot de passe:</label><br />
+          <input
+            type="password"
+            id="mdpr"
+            name="mdpr"
+            minlength="4"
+            required
+          />
+        </div>
+
+        <input type="submit" value="Créer compte" />
+        <p><a href="{{url_for('home')}}">J'ai un compte!</a></p>
+      </form>
+    </div>
+
+
+    <script src="/static/script/register.js"></script>
+  </body>
+</html>

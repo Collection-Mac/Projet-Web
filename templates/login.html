@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Page</title>
+  </head>
+  <body>
+    <div>
+      <div><p style="color: red;">{{error}}</p></div>
+      <form action="{{url_for('authentification')}}" method="POST">
+        <div>
+          <label for="username">Username:</label><br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="exemple:kanoh@"
+          />
+        </div>
+
+        <div>
+          <label for="mdp">Password:</label><br />
+          <input type="password" id="mdp" name="mdp" minlength="4" required/>
+        </div>
+
+        <input type="submit" value="Sign in" />
+        <p><a href="{{url_for('formregister')}}">Je n'ai pas de compte!</a></p>
+      </form>
+    </div>
+  </body>
+</html>

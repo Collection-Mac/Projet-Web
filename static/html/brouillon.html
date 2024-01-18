@@ -1,0 +1,101 @@
+python3 -m venv .venv
+. .venv/bin/activate
+pip install flask
+flask run --debug -p 5000
+
+
+{% print("test") %}
+
+
+
+
+from flask import Flask, send_from_directory
+
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+     repertoire = "/Bureau/ISTN/WEB/server_flask/static/html"
+     return send_from_directory('static', 'html/index.html')
+
+if __name__ == '__main__':
+     app.run(debug=True)
+--------------------------------------------------------------------------------------
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+     return render_template('formRegister.html')
+
+if __name__ == '__main__':
+     app.run(debug=True)
+
+
+
+@app.route("/login")
+def login_page():
+     repertoire = ""
+     return render_template('static', 'html/login.html')
+
+
+
+@app.route("/formregister")
+def form_page():
+     repertoire = ""
+     return redirect('static', 'html/formregister.html')
+
+
+@app.route("/register")
+def register_page():
+     repertoire = ""
+     return redirect('static', 'html/login.html')
+
+
+
+@app.route("/loginPOST")
+def loginpost_page():
+     repertoire = ""
+     return redirect_template('static', 'html/profil.html,user=')
+
+
+@app.route("/profil")
+def profil_page():
+     repertoire = ""
+     return render_template('static', 'html/profil.html')
+
+
+
+
+
+
+
+
+
+     @app.route("/login", methods=["POST"])
+def authentification():
+     #if request.method == "POST":
+          donneeslogin = request.form
+          username = donneeslogin.get('username')
+          mdp = donneeslogin.get('mdp')
+          #print(username, mdp)
+          if username == 'kanoh' and mdp == 'kanoh@':
+               #return f"Bienvenue {username} !"
+               return render_template("index.html")
+          else:
+               return redirect(url_for('home'))
+     #else: 
+     #     return redirect(url_for('home'))
+
+
+     #permet d'afficher la valeur d'une vaiable dans la console
+     app.logger.debug("user = %s", user['username'])
+     app.logger.debug("user = %s", data)
+
+
+     """ for i in range(len(users_information)):
+            if user["email"] == users_information[i]["email"]:
+        return render_template("formRegister.html") """

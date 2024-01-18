@@ -1,0 +1,17 @@
+[
+  {
+    "nom": "nom",
+    "prenom": "prenom",
+    "email": "kanoh@exemple.net",
+    "mdpr": "1111111"
+  },
+  { "nom": "abdillahi", "prenom": "S", "email": "abdil@m", "mdpr": "12345" },
+  { "nom": "Anoh", "prenom": "Kolia", "email": "kanoh@", "mdpr": "kanoh@anoh" },
+  {
+    "nom": "bonjour",
+    "prenom": "bonsoir",
+    "email": "example@gmail.com",
+    "mdpr": "bon mdp"
+  },
+  { "nom": "A", "prenom": "A", "email": "A", "mdpr": "22222222" }
+]

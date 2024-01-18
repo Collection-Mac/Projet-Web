@@ -1,0 +1,83 @@
+body {
+  margin: 50px;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auteur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+}
+
+.profil span {
+  color: green;
+}
+
+.profil-container {
+  margin-left: 100px;
+}
+
+.barre {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  display: inline-block;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+header div {
+  
+}
+
+header h4 {
+  margin-left: 5px;
+}
+
+main {
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+code {
+  color: brown;
+}
+
+
+
+
+--------------------------
+
+/* Styles par défaut pour tous les champs */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles pour les champs valides */
+.valid {
+  border: 1px solid #2ecc71;
+}
+
+/* Styles pour les champs invalides */
+.invalid {
+  border: 1px solid #e74c3c;
+}
+

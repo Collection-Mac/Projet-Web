@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" >
+		<title> TP1 | WEB </title>
+		<link rel="stylesheet" href="/static/style/main.css">
+		<meta name="description" content="description de la page pour les moteurs de recherche" >
+	</head>
+	<body>
+
+		<header>
+			<div>
+				<h1> Présentation des éléments et attributs<br> d'un document HTML  </h1>
+				<div class="auteur">
+					<p>Par</p>
+					<h4>Kolia Marcel Anoh</h4>
+				</div>
+				<p>Ce contenu est une page qui fait l'étude empirique du document HTML de la page web <a href="https://solar.lowtechmagazine.com/fr/2023/06/rebuilding-a-solar-powered-website/">LOW-TECH MAGAZINE</a></p>
+			</div>
+			<div class="profil-container">
+				<div class="profil">
+					<h2>profil</h2>
+					<span>(Connecté)</span>
+				</div>
+				<a href="">se deconnecter</a>
+			</div>
+		</header>
+		<div class="barre"></div>
+		<nav>
+		</nav>
+		
+		<main>
+			<!--NIVEAU-ENTETE-->
+			<section>
+				<div>
+					<h2>Entête d'un document HTML</h2>
+					<p>L'entête d'un document HTML est définit par une balise <code>&lt;head&gt;</code><br>
+						à l'intérieur de laquelle est définit des éléments et leur attributs :
+					</p>
+					<ul>
+						<li><code>&lt;meta&gt;</code><code>&lt;charset="UTF-8"&gt;</code></li>
+						<li><code>&lt;title&gt;</code></li>
+						<li><code>&lt;link&gt;</code></li>
+						<li><code>&lt;script&gt;</code></li>
+					</ul>
+					<div>
+						<h5>Exemple de lignes de codes</h5>
+						<pre>
+							<code>
+		&lt;<span>head</span>&gt;
+			&lt;<span>meta<span> charset</span><span>=</span>"utf-8"</span>&gt;
+			&lt;<span>title<span>&gt; Un titre &lt;/<span>title<span>&gt;
+			&lt;<span>script<span> src</span><span>=</span>"url js"</span>&gt;  &lt;/<span>script<span>&gt;
+		&lt;/<span>head</span>&gt;
+							</code>
+						</pre>
+					</div>
+			</div>
+			</section>
+
+            <!--NIVEAU-CORPS-->
+			<section>
+				<div>
+					<h2>Le corps du document HTML</h2>
+					<div>
+						<p>Le corps d'un document HTML est définit par la balise <code>&lt;body&gt;</code> 
+							et contient l'ensemble du contenu visible de la page web. 
+							Les balises à l'intérieur du corps sont organisées de manière hiérarchique 
+							pour structurer le contenu de la page de manière logique. On peut citer comme balises principales :
+							<ul>
+								<li><code>&lt;header&gt;</code></li>
+								<li><code>&lt;main&gt;</code></li>
+								<li><code>&lt;footer&gt;</code></li>
+								<li><code>&lt;nav&gt;</code></li>
+								<li><code>&lt;section&gt;</code></li>
+								<li><code>&lt;h1&gt;</code></li>
+							</ul>
+							<p>Ces éléments sont généralement accompagnés par les attributs <code>class</code> et <code>id</code> 
+								pour appliquer des styles ou référencer des éléments via du JavaScript.
+							</p>
+						</p>
+					</div>
+					<div>
+						<h5>Exemple de corps d'un document HTML</h5>
+						<pre>
+							<code>
+		&lt;<span>body</span>&gt;
+			&lt;<span>header</span>&gt;
+				&lt;<span>h1</span>&gt; Ceci est un titre &lt;/<span>h1</span>&gt;
+			&lt;/<span>header</span>&gt;
+			&lt;<span>nav</span>&gt;
+				&lt;<span>p</span>&gt; Ceci est paragraphe dans une balise nav &lt;/<span>p</span>&gt;
+			&lt;/<span>nav</span>&gt;
+			&lt;<span>main</span>&gt;
+				&lt;<span>p</span>&gt; Ceci est un paragraphe &lt;/<span>p</span>&gt;
+			&lt;/<span>main</span>&gt;
+			&lt;<span>footer</span>&gt;
+				&lt;<span>p</span>&gt; Ceci est un paragraphe dans une balise footer &lt;/<span>p</span>&gt;
+			&lt;/<span>footer</span>&gt;
+		&lt;/<span>body</span>&gt;
+							</code>
+						</pre>
+					</div>
+				</div>
+			</section>
+
+            <section>
+                <h2>Liste des attributs</h2>
+                <p>Pour chaque attribut observé donner des exemples de valeurs admis-
+					sibles et lister les éléments qui les acceptent. Pour les attributs qui sont
+					acceptés par tous les éléments qui peuvent apparaître dans le corps
+					d'un document HTML se contenter de noter « Tous »</p>
+            </section>
+		</main>
+
+        <!--NIVEAU-CORPS-->
+		<footer>
+			<div class="barre"></div>
+            <p>Ceci est un pied de page</p>
+			<a href="login.html">Connexion</a><br>
+			<a href="formRegister.html">Inscription</a>
+		</footer>
+	</body>
+</html>
