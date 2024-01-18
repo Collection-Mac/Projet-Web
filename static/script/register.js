@@ -1,3 +1,6 @@
+function checkValidity() {
+    
+}
 
 document.getElementById('formRegister').addEventListener('submit', function (event) {
     event.preventDefault(); // Empêcher la soumission du formulaire par défaut
