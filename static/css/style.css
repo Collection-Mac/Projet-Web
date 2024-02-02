@@ -61,6 +61,10 @@ code {
 
 --------------------------
 
+.form-title {
+  color: #2ecc71;
+}
+
 /* Styles par défaut pour tous les champs */
 .input {
   width: 100%;

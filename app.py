@@ -38,7 +38,8 @@ def authentification():
     for i in range(len(data)):
         if user["username"] == data[i]["email"]:
             if user["mdp"] == data[i]["mdpr"]:
-                return send_from_directory("static", "html/index.html")
+                return render_template("index.html")
+                """ return send_from_directory("templates", "index.html") """
             else:
                 msg = "Mot de passe non valide !"
         else:

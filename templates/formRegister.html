@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/style/main.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
     <title>Formulaire d'inscription</title>
   </head>
   <body>
     <div>
-      <div><p style="color: red;">{{error}}</p></div>
+      <div><p style="color: red">{{error}}</p></div>
 
-      <h3>Formulaire d'inscription</h3>
-      <form id="formRegister" action="{{url_for('formregister')}}" method="POST">
-        <div class="field">
+      <h3 class="form-title">Formulaire d'inscription</h3>
+      <form id="formRegister" action="{{url_for('formregister')}}" method="POST" >
+        <div class="input">
           <label for="nom">Nom:</label><br />
           <input type="text" id="nom" name="nom" />
         </div>
@@ -29,13 +29,7 @@
 
         <div class="field">
           <label for="mdpr">Mot de passe:</label><br />
-          <input
-            type="password"
-            id="mdpr"
-            name="mdpr"
-            minlength="4"
-            required
-          />
+          <input type="password" id="mdpr" name="mdpr" minlength="4" />
         </div>
 
         <input type="submit" value="Créer compte" />
@@ -43,7 +37,17 @@
       </form>
     </div>
 
-
-    <script src="/static/script/register.js"></script>
+    <script src="{{url_for('static', filename='script/register.js')}}"></script>
+    <!-- <script>
+      function checkValidity() {
+        console.error("HELLO");
+        const x = document.getElementById("nomfrom");
+        x.value = x.value.checkValidity();
+        x.style.borderColor = 'green';
+        x.value = "HELLO";
+    
+        console.log("elements.value.length");
+      }
+    </script> -->
   </body>
 </html>
