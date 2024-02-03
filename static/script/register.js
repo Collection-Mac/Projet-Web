@@ -1,45 +1,67 @@
+const formRegister = document.getElementById('formRegister')
+const nom = document.getElementById('nom')
+const prenom = document.getElementById('prenom')
+const email = document.getElementById('email')
+const mdpr = document.getElementById('mdpr')
 
-let formRegister = document.getElementById('formRegister');
+formRegister.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-formRegister.addEventListener('submit', function(e) {
-  let firstInput = document.getElementById('nom');
+  checkInputs();
+})
 
-  if(firstInput.value.trim() == ""){
-    let invalid = document.getElementById('prenom');
-    invalid.style.border = '1px solid #e74c3c';
-    
-    e.preventDefault();
-  }else if
-  
-});
+function checkInputs() {
+  //récupérer les valeurs des input
+  const nomValue = nom.value.trim();
+  const prenomValue = prenom.value.trim();
+  const emailValue = email.value.trim();
+  const mdprValue = mdpr.value.trim();
 
+  if (nomValue === '') {
+    //afficher l'erreur/ajout de la class error
+    setErrorFor(nom, 'Champ incorrect')
+  } else {
+    //ajout de la class success
+    setSuccessFor(nom);
+  }
 
-/* function checkValidity() {
-    const x = document.getElementById("nom");
+  if (prenomValue === '') {
+    //afficher l'erreur/ajout de la class error
+    setErrorFor(prenom, 'Champ incorrect')
+  } else {
+    //ajout de la class success
+    setSuccessFor(prenom);
+  }
 
-    x.value = "HELLO";
-    console.error("HELLO");
+  if (emailValue === '') {
+    //afficher l'erreur/ajout de la class error
+    setErrorFor(email, 'Champ incorrect')
+  } else {
+    //ajout de la class success
+    setSuccessFor(email);
+  }
 
-    console.log("elements.value.length");
+  if (mdprValue === '') {
+    //afficher l'erreur/ajout de la class error
+    setErrorFor(mdpr, 'Champ incorrect')
+  } else {
+    //ajout de la class success
+    setSuccessFor(mdpr);
+  }
+}
 
-} */
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
 
+  //ajout du message d'erreur dans la balise small
+  small.innerText = message;
 
-/* document.getElementById("formRegister").addEventListener("submit", function (event) {
-    event.preventDefault(); // Empêcher la soumission du formulaire par défaut
+  formControl.className = 'form-control error'
+}
 
-    // Récupérer tous les champs de saisie du formulaire
-    var champs = this.querySelectorAll("input");
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success'
+}
 
-    // Parcourir chaque champ
-    champs.forEach(function (champ) {
-      // Vérifier si le champ est correctement rempli
-      if (champ.checkValidity()) {
-        champ.classList.remove("invalid");
-        champ.classList.add("valid");
-      } else {
-        champ.classList.remove("valid");
-        champ.classList.add("invalid");
-      }
-    });
-  }); */

@@ -7,7 +7,7 @@ from flask import (
     send_from_directory,
 )
 import json
-import bcrypt
+""" import bcrypt """
 
 
 app = Flask(__name__)
