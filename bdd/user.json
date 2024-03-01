@@ -1,4 +1,16 @@
 [
-  { "nom": "abdillahi", "prenom": "S", "email": "abdil@m", "mdpr": "12345" },
-  { "nom": "Anoh", "prenom": "Kolia", "email": "kanoh@", "mdpr": "kanoh@anoh" }
+  {
+    "nom": "Anoh",
+    "prenom": "Kolia",
+    "email": "kolia@gmail.com",
+    "mdpr": "azerty",
+    "cmdpr": "azerty"
+  },
+  {
+    "nom": "anoh",
+    "prenom": "kolia",
+    "email": "kolia.anoh@gmail.com",
+    "mdpr": "aqwxsz",
+    "cmdpr": "aqwxsz"
+  }
 ]

@@ -3,7 +3,7 @@
 
 body {
   margin: 50px;
-  background: #7a7979;
+  background: #a6a6a6;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -73,7 +73,7 @@ code {
 }
 
 .form-body {
-  background-color: #7a7979;
+  background-color: #a6a6a6;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
@@ -92,7 +92,7 @@ code {
 .form-header {
   border-bottom: 1px solid #f0f0f0;
   background-color: #f7f7f7;
-  padding: 20px 40px;
+  padding: 0px 40px;
 }
 
 .form-header h2 {
@@ -100,12 +100,11 @@ code {
 }
 
 form {
-  padding: 30px 40px;
+  padding: 15px 40px;
 }
 
 .form-control {
   margin-bottom: 10px;
-  padding-bottom: 20px;
   position: relative;
 }
 
@@ -120,7 +119,7 @@ form {
 	display: block;
 	font-family: inherit;
 	font-size: 14px;
-	padding: 10px;
+	padding: 4px 0px 4px 4px;
 	width: 100%;
 }
 
@@ -132,6 +131,47 @@ form {
 .form-title {
   color: #46c6cf;
 }
+
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add {
+  text-decoration: none;
+  color: black;
+  /* width: 40px;
+  height: 40px; */
+  font-size: 2rem;
+}
+
+/* Dynamysme des champs qualités */
+.flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.flex input {
+  border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 4px 0px 4px 4px;
+	width: 100%;
+  margin-bottom: 10px;
+}
+
+.delete {
+  text-decoration: none;
+  display: inline-block;
+  color: #f44336;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 
 /* Styles pour les champs valides */
 .form-control.success input{
